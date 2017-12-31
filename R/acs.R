@@ -101,7 +101,7 @@ lodown_acs <-
 					cachaca( this_download , tf , mode = 'wb' , filesize_fun = "httr" )
 								
 					if ( j == 'p' ) {
-						readline(prompt="Press [enter] to continue after manually extracting files") }
+						readline(prompt=paste0("Press [enter] to continue after manually extracting files to ",tempdir())) }
 						else {
 						archive::archive_extract( tf , dir = tempdir() )
 						}

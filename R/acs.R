@@ -102,7 +102,7 @@ lodown_acs <-
 								
 					if ( j == 'p' ) {
 						readline(prompt="Press [enter] to continue after manually extracting files") }
-						else }
+						else {
 						archive::archive_extract( tf , dir = tempdir() )
 						}
 					

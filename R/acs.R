@@ -100,8 +100,12 @@ lodown_acs <-
 					
 					cachaca( this_download , tf , mode = 'wb' , filesize_fun = "httr" )
 								
-					archive::archive_extract( tf , dir = tempdir() )
-
+					if ( j == 'p' ) {
+						readline(prompt="Press [enter] to continue after manually extracting files") }
+						else }
+						archive::archive_extract( tf , dir = tempdir() )
+						}
+					
 					tfn <- list.files( tempdir() , full.names = TRUE )
 
 					# limit the files to read in to ones containing csvs

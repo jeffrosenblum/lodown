@@ -101,7 +101,7 @@ lodown_acs <-
 					cachaca( this_download , tf , mode = 'wb' , filesize_fun = "httr" )
 								
 					if ( j == 'p' ) {
-						readline(prompt=paste0("Press [enter] to continue after cd /tmp/",tempdir()," then jar xvf ",tf,)) }
+						readline(prompt=paste0("Press [enter] to continue after cd /tmp/",tempdir()," then jar xvf ",tf)) }
 						else {
 						archive::archive_extract( tf , dir = tempdir() )
 						}
